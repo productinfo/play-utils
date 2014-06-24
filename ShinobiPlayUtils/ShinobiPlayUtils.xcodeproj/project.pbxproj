@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68793C051959855D009C17BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68793C041959855D009C17BD /* Foundation.framework */; };
+		68793C131959855E009C17BD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68793C121959855E009C17BD /* XCTest.framework */; };
+		68793C141959855E009C17BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68793C041959855D009C17BD /* Foundation.framework */; };
+		68793C161959855E009C17BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68793C151959855E009C17BD /* UIKit.framework */; };
+		68793C191959855E009C17BD /* libShinobiPlayUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68793C011959855D009C17BD /* libShinobiPlayUtils.a */; };
+		68793C1F1959855E009C17BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68793C1D1959855E009C17BD /* InfoPlist.strings */; };
+		68793C211959855E009C17BD /* ShinobiPlayUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */; };
+		68793C2C195985B5009C17BD /* SPUOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */; };
+		68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68793C171959855E009C17BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68793BF91959855D009C17BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68793C001959855D009C17BD;
+			remoteInfo = ShinobiPlayUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68793BFF1959855D009C17BD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68793C011959855D009C17BD /* libShinobiPlayUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShinobiPlayUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68793C041959855D009C17BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68793C081959855D009C17BD /* ShinobiPlayUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShinobiPlayUtils-Prefix.pch"; sourceTree = "<group>"; };
+		68793C111959855E009C17BD /* ShinobiPlayUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinobiPlayUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68793C121959855E009C17BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68793C151959855E009C17BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		68793C1C1959855E009C17BD /* ShinobiPlayUtilsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShinobiPlayUtilsTests-Info.plist"; sourceTree = "<group>"; };
+		68793C1E1959855E009C17BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShinobiPlayUtilsTests.m; sourceTree = "<group>"; };
+		68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUOrderedDictionary.h; sourceTree = "<group>"; };
+		68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUOrderedDictionary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68793BFE1959855D009C17BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68793C051959855D009C17BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68793C0E1959855E009C17BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68793C131959855E009C17BD /* XCTest.framework in Frameworks */,
+				68793C161959855E009C17BD /* UIKit.framework in Frameworks */,
+				68793C191959855E009C17BD /* libShinobiPlayUtils.a in Frameworks */,
+				68793C141959855E009C17BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68793BF81959855D009C17BD = {
+			isa = PBXGroup;
+			children = (
+				68793C061959855D009C17BD /* ShinobiPlayUtils */,
+				68793C1A1959855E009C17BD /* ShinobiPlayUtilsTests */,
+				68793C031959855D009C17BD /* Frameworks */,
+				68793C021959855D009C17BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68793C021959855D009C17BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68793C011959855D009C17BD /* libShinobiPlayUtils.a */,
+				68793C111959855E009C17BD /* ShinobiPlayUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68793C031959855D009C17BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68793C041959855D009C17BD /* Foundation.framework */,
+				68793C121959855E009C17BD /* XCTest.framework */,
+				68793C151959855E009C17BD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68793C061959855D009C17BD /* ShinobiPlayUtils */ = {
+			isa = PBXGroup;
+			children = (
+				68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */,
+				68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */,
+				68793C071959855D009C17BD /* Supporting Files */,
+			);
+			path = ShinobiPlayUtils;
+			sourceTree = "<group>";
+		};
+		68793C071959855D009C17BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68793C081959855D009C17BD /* ShinobiPlayUtils-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68793C1A1959855E009C17BD /* ShinobiPlayUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */,
+				68793C1B1959855E009C17BD /* Supporting Files */,
+			);
+			path = ShinobiPlayUtilsTests;
+			sourceTree = "<group>";
+		};
+		68793C1B1959855E009C17BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68793C1C1959855E009C17BD /* ShinobiPlayUtilsTests-Info.plist */,
+				68793C1D1959855E009C17BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68793C001959855D009C17BD /* ShinobiPlayUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68793C241959855E009C17BD /* Build configuration list for PBXNativeTarget "ShinobiPlayUtils" */;
+			buildPhases = (
+				68793BFD1959855D009C17BD /* Sources */,
+				68793BFE1959855D009C17BD /* Frameworks */,
+				68793BFF1959855D009C17BD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinobiPlayUtils;
+			productName = ShinobiPlayUtils;
+			productReference = 68793C011959855D009C17BD /* libShinobiPlayUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		68793C101959855E009C17BD /* ShinobiPlayUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68793C271959855E009C17BD /* Build configuration list for PBXNativeTarget "ShinobiPlayUtilsTests" */;
+			buildPhases = (
+				68793C0D1959855E009C17BD /* Sources */,
+				68793C0E1959855E009C17BD /* Frameworks */,
+				68793C0F1959855E009C17BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68793C181959855E009C17BD /* PBXTargetDependency */,
+			);
+			name = ShinobiPlayUtilsTests;
+			productName = ShinobiPlayUtilsTests;
+			productReference = 68793C111959855E009C17BD /* ShinobiPlayUtilsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68793BF91959855D009C17BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alison Clarke";
+			};
+			buildConfigurationList = 68793BFC1959855D009C17BD /* Build configuration list for PBXProject "ShinobiPlayUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68793BF81959855D009C17BD;
+			productRefGroup = 68793C021959855D009C17BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68793C001959855D009C17BD /* ShinobiPlayUtils */,
+				68793C101959855E009C17BD /* ShinobiPlayUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68793C0F1959855E009C17BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68793C1F1959855E009C17BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68793BFD1959855D009C17BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68793C2C195985B5009C17BD /* SPUOrderedDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68793C0D1959855E009C17BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68793C211959855E009C17BD /* ShinobiPlayUtilsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68793C181959855E009C17BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68793C001959855D009C17BD /* ShinobiPlayUtils */;
+			targetProxy = 68793C171959855E009C17BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68793C1D1959855E009C17BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68793C1E1959855E009C17BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68793C221959855E009C17BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68793C231959855E009C17BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68793C251959855E009C17BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ShinobiPlayUtils.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiPlayUtils/ShinobiPlayUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68793C261959855E009C17BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ShinobiPlayUtils.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiPlayUtils/ShinobiPlayUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		68793C281959855E009C17BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiPlayUtils/ShinobiPlayUtils-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShinobiPlayUtilsTests/ShinobiPlayUtilsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68793C291959855E009C17BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShinobiPlayUtils/ShinobiPlayUtils-Prefix.pch";
+				INFOPLIST_FILE = "ShinobiPlayUtilsTests/ShinobiPlayUtilsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68793BFC1959855D009C17BD /* Build configuration list for PBXProject "ShinobiPlayUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68793C221959855E009C17BD /* Debug */,
+				68793C231959855E009C17BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68793C241959855E009C17BD /* Build configuration list for PBXNativeTarget "ShinobiPlayUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68793C251959855E009C17BD /* Debug */,
+				68793C261959855E009C17BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68793C271959855E009C17BD /* Build configuration list for PBXNativeTarget "ShinobiPlayUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68793C281959855E009C17BD /* Debug */,
+				68793C291959855E009C17BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68793BF91959855D009C17BD /* Project object */;
+}
