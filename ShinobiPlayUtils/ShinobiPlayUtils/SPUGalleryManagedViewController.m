@@ -10,6 +10,8 @@
 
 @interface SPUGalleryManagedViewController ()
 
+@property CGRect frame;
+
 @end
 
 @implementation SPUGalleryManagedViewController
@@ -17,9 +19,14 @@
 - (id)initWithViewFrame:(CGRect)frame {
   self = [super init];
   if (self) {
-    self.view.frame = frame;
+    self.frame = frame;
   }
   return self;
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.view.frame = self.frame;
 }
 
 @end
