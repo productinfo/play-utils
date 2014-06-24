@@ -16,6 +16,8 @@
 		68793C211959855E009C17BD /* ShinobiPlayUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */; };
 		68793C2C195985B5009C17BD /* SPUOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */; };
 		68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */; };
+		68793C4A1959A67C009C17BD /* SPUGalleryManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */; };
+		68793C4B1959A709009C17BD /* SPUGalleryManagedViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 			dstSubfolderSpec = 16;
 			files = (
 				68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */,
+				68793C4B1959A709009C17BD /* SPUGalleryManagedViewController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +56,8 @@
 		68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShinobiPlayUtilsTests.m; sourceTree = "<group>"; };
 		68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUOrderedDictionary.h; sourceTree = "<group>"; };
 		68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUOrderedDictionary.m; sourceTree = "<group>"; };
-		68793C4319598F9D009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; };
+		68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; };
+		68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUGalleryManagedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,8 @@
 				68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */,
 				68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */,
 				68793C071959855D009C17BD /* Supporting Files */,
-				68793C4319598F9D009C17BD /* SPUGalleryManagedViewController.h */,
+				68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */,
+				68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */,
 			);
 			path = ShinobiPlayUtils;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68793C4A1959A67C009C17BD /* SPUGalleryManagedViewController.m in Sources */,
 				68793C2C195985B5009C17BD /* SPUOrderedDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +413,7 @@
 				68793C261959855E009C17BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68793C271959855E009C17BD /* Build configuration list for PBXNativeTarget "ShinobiPlayUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				68793C291959855E009C17BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
