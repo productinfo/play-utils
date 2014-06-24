@@ -53,6 +53,7 @@
 		68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShinobiPlayUtilsTests.m; sourceTree = "<group>"; };
 		68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUOrderedDictionary.h; sourceTree = "<group>"; };
 		68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUOrderedDictionary.m; sourceTree = "<group>"; };
+		68793C4319598F9D009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 				68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */,
 				68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */,
 				68793C071959855D009C17BD /* Supporting Files */,
+				68793C4319598F9D009C17BD /* SPUGalleryManagedViewController.h */,
 			);
 			path = ShinobiPlayUtils;
 			sourceTree = "<group>";
