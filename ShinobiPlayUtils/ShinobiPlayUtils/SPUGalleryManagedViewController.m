@@ -26,7 +26,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.view.frame = self.frame;
+  if (!CGRectIsEmpty(self.frame)) {
+    self.view.frame = self.frame;
+  }
 }
 
 @end
