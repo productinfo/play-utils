@@ -8,57 +8,57 @@
 
 #import "SPUOrderedDictionary.h"
 
+@interface SPUOrderedDictionary ()
+
+@property (nonatomic, strong) NSMutableDictionary *dictionary;
+@property (nonatomic, strong) NSMutableArray *array;
+
+@end
+
 @implementation SPUOrderedDictionary
 
-@synthesize dictionary;
-@synthesize array;
-
-- (id)init
-{
+- (instancetype)init {
   self = [super init];
   if (self != nil) {
-    dictionary = [NSMutableDictionary dictionary];
-    array = [NSMutableArray array];
+    self.dictionary = [NSMutableDictionary dictionary];
+    self.array = [NSMutableArray array];
   }
   return self;
 }
 
-
-+ (SPUOrderedDictionary*)dictionary {
-  SPUOrderedDictionary *dictionary = [[SPUOrderedDictionary alloc] init];
-  return dictionary;
++ (instancetype)dictionary {
+  return [[[SPUOrderedDictionary class] alloc] init];
 }
 
 - (void)setObject:(id)anObject forKey:(id)aKey {
-  if (![dictionary objectForKey:aKey]) {
-    [array addObject:aKey];
+  if (![self.dictionary objectForKey:aKey]) {
+    [self.array addObject:aKey];
   }
-  [dictionary setObject:anObject forKey:aKey];
+  [self.dictionary setObject:anObject forKey:aKey];
 }
 
 - (void)removeObjectForKey:(id)aKey {
-  [dictionary removeObjectForKey:aKey];
-  [array removeObject:aKey];
+  [self.dictionary removeObjectForKey:aKey];
+  [self.array removeObject:aKey];
 }
 
 - (NSUInteger)count {
-  return dictionary.count;
+  return self.dictionary.count;
 }
 
 - (id)objectForKey:(id)aKey {
-  return [dictionary objectForKey:aKey];
+  return [self.dictionary objectForKey:aKey];
 }
 
-- (NSEnumerator *)keyEnumerator
-{
-  return [array objectEnumerator];
+- (NSEnumerator *)keyEnumerator {
+  return [self.array objectEnumerator];
 }
 
-- (id)keyAtIndex: (unsigned int)index    {
-  return [array objectAtIndex:index];
+- (id)keyAtIndex:(NSUInteger)index    {
+  return [self.array objectAtIndex:index];
 }
 
-- (id)objectAtIndex:(unsigned int)index {
+- (id)objectAtIndex:(NSUInteger)index {
   return [self objectForKey:[self keyAtIndex:index]];
 }
 
