@@ -10,7 +10,7 @@
 
 @interface SPUGalleryManagedViewController ()
 
-@property CGRect frame;
+@property (nonatomic, assign) CGRect frame;
 
 @end
 

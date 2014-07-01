@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Alison Clarke. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface SPUGalleryManagedViewController : UIViewController
 
--(instancetype)initWithViewFrame:(CGRect)frame;
+- (instancetype)initWithViewFrame:(CGRect)frame;
 
 @end
