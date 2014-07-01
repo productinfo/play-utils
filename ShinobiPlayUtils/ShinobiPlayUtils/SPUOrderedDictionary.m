@@ -26,6 +26,15 @@
   return self;
 }
 
+- (instancetype)initWithCapacity:(NSUInteger)numItems {
+  self = [super init];
+  if (self != nil) {
+    self.dictionary = [NSMutableDictionary dictionaryWithCapacity:numItems];
+    self.array = [NSMutableArray arrayWithCapacity:numItems];
+  }
+  return self;
+}
+
 + (instancetype)dictionary {
   return [[[SPUOrderedDictionary class] alloc] init];
 }
