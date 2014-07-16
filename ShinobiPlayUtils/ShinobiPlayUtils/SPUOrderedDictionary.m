@@ -40,10 +40,10 @@
 }
 
 - (void)setObject:(id)anObject forKey:(id)aKey {
-  if (![self.dictionary objectForKey:aKey]) {
+  if (!self.dictionary[aKey]) {
     [self.array addObject:aKey];
   }
-  [self.dictionary setObject:anObject forKey:aKey];
+  self.dictionary[aKey] = anObject;
 }
 
 - (void)removeObjectForKey:(id)aKey {
@@ -56,7 +56,7 @@
 }
 
 - (id)objectForKey:(id)aKey {
-  return [self.dictionary objectForKey:aKey];
+  return self.dictionary[aKey];
 }
 
 - (NSEnumerator *)keyEnumerator {
@@ -64,11 +64,11 @@
 }
 
 - (id)keyAtIndex:(NSUInteger)index    {
-  return [self.array objectAtIndex:index];
+  return self.array[index];
 }
 
 - (id)objectAtIndex:(NSUInteger)index {
-  return [self objectForKey:[self keyAtIndex:index]];
+  return self[self.array[index]];
 }
 
 @end
