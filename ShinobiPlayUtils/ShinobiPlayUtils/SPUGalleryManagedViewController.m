@@ -16,12 +16,19 @@
 
 @implementation SPUGalleryManagedViewController
 
-- (id)initWithViewFrame:(CGRect)frame {
+- (instancetype)initWithViewFrame:(CGRect)frame {
   self = [super init];
   if (self) {
     self.frame = frame;
   }
   return self;
+}
+
++ (instancetype)viewControllerFromStoryboard:(NSString*)storyboardName viewFrame:(CGRect)frame {
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+  SPUGalleryManagedViewController *vc = [storyboard instantiateInitialViewController];
+  vc.frame = frame;
+  return vc;
 }
 
 - (void)viewDidLoad {
