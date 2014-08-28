@@ -53,11 +53,11 @@
 		68793C151959855E009C17BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		68793C1C1959855E009C17BD /* ShinobiPlayUtilsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShinobiPlayUtilsTests-Info.plist"; sourceTree = "<group>"; };
 		68793C1E1959855E009C17BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShinobiPlayUtilsTests.m; sourceTree = "<group>"; };
+		68793C201959855E009C17BD /* ShinobiPlayUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ShinobiPlayUtilsTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUOrderedDictionary.h; sourceTree = "<group>"; };
 		68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUOrderedDictionary.m; sourceTree = "<group>"; };
-		68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; };
-		68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUGalleryManagedViewController.m; sourceTree = "<group>"; };
+		68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SPUGalleryManagedViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
