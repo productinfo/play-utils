@@ -24,6 +24,7 @@
 @interface SPUGalleryManagedViewController : UIViewController
 
 - (instancetype)initWithViewFrame:(CGRect)frame;
-+ (instancetype)viewControllerFromStoryboard:(NSString*)storyboardName viewFrame:(CGRect)frame;
-
++ (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName viewFrame:(CGRect)frame;
++ (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName identifier:(NSString *)identifier
+                                   viewFrame:(CGRect)frame;
 @end

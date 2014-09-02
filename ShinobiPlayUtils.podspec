@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ShinobiPlayUtils"
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = "Files common to ShinobiPlay projects"
   s.description      = <<-DESC
                        Files common to ShinobiPlay projects, e.g. utility classes and base classes

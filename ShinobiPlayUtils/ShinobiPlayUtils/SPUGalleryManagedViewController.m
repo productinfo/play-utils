@@ -37,9 +37,20 @@
   return self;
 }
 
-+ (instancetype)viewControllerFromStoryboard:(NSString*)storyboardName viewFrame:(CGRect)frame {
++ (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName viewFrame:(CGRect)frame {
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
   UIViewController *vc = [storyboard instantiateInitialViewController];
+  return [SPUGalleryManagedViewController checkViewController:vc andSetViewFrame:frame];
+}
+
++ (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName identifier:(NSString *)identifier
+                                   viewFrame:(CGRect)frame {
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+  UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:identifier];
+  return [SPUGalleryManagedViewController checkViewController:vc andSetViewFrame:frame];
+}
+
++ (instancetype)checkViewController:(UIViewController*)vc andSetViewFrame:(CGRect)frame {
   if ([vc isKindOfClass:[SPUGalleryManagedViewController class]]) {
     SPUGalleryManagedViewController *svc = (SPUGalleryManagedViewController *) vc;
     svc.frame = frame;
