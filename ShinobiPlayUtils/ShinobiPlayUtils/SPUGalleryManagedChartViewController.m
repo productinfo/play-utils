@@ -95,7 +95,15 @@
     if ([series isKindOfClass:[SChartDonutSeries class]] && self.selectedDonutIndices[seriesIndex]) {
       SChartDonutSeries *donutSeries = (SChartDonutSeries *) series;
       for (NSNumber *index in self.selectedDonutIndices[seriesIndex]) {
-        [donutSeries setSlice:[index integerValue] asSelected:YES];
+        // Grab the appropriate data point and set it to be selected
+        // NB: the docs tell you not to modify the data in SChartSeries.dataSeries but:
+        // a) we can't really change the data source from here - we don't want to have
+        // the charts based on this superclass to concern themselves with preserving the
+        // chart state
+        // b) we're not actually changing the data itself so we don't need to worry about
+        // inconsistencies with the data source
+        SChartDataPoint *dp = series.dataSeries.dataPoints[[index integerValue]];
+        dp.selected = YES;
       }
       donutSeries.style.initialRotation = self.rotations[seriesIndex];
     }
