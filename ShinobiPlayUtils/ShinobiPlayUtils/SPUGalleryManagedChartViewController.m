@@ -10,7 +10,6 @@
 
 @interface SPUGalleryManagedChartViewController ()
 
-@property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
 @property (strong, nonatomic) NSMutableArray *ranges;
 @property (strong, nonatomic) NSMutableDictionary *selectedDonutIndices;
 @property (strong, nonatomic) NSMutableDictionary *rotations;
@@ -26,9 +25,17 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.chart.delegate = self;
-  self.dataSource = [self createDataSource];
+  [self createChart];
+  [self createDataSource];
   self.chart.datasource = self.dataSource;
+  self.chart.delegate = self;
+  [self setupChart];
+  
+  // Chart may have already been added by a storyboard
+  if (![self.chart isDescendantOfView:self.view]) {
+    [self.view addSubview:self.chart];
+  }
+  
   self.selectedDonutIndices = [NSMutableDictionary new];
   self.rotations = [NSMutableDictionary new];
 }
@@ -38,10 +45,17 @@
   
   // Recreate the chart if necessary
   if (!self.chart) {
-    self.chart = [[ShinobiChart alloc] initWithFrame:self.chartFrame];
-    self.dataSource = [self createDataSource];
+    [self createChart];
+    if (self.chart) {
+      self.chart.frame = self.chartFrame;
+    } else {
+      self.chart = [[ShinobiChart alloc] initWithFrame:self.chartFrame];
+    }
+    
+    [self createDataSource];
     self.chart.datasource = self.dataSource;
     self.chart.delegate = self;
+    [self setupChart];    
     [self.view addSubview:self.chart];
   }
 }
@@ -69,11 +83,28 @@
   self.dataSource = nil;
 }
 
--(id<SChartDatasource>)createDataSource {
-  // Must be implemented in subclass
-  [self doesNotRecognizeSelector:_cmd];
-  return nil;
+#pragma mark - lifecycle methods that can be implemented in subclasses (move to protocol?)
+
+- (void)createChart {
+  // Add an implementation in subclasses if the chart isn't created in a xib
 }
+
+- (void)createDataSource {
+  // Must be implemented in subclass, to set self.datasource
+  [self doesNotRecognizeSelector:_cmd];
+}
+
+- (void)setupChart {
+  // Add an implementation in subclasses for any chart setup code that should be called
+  // when a chart is recreated
+}
+
+- (void)setupAfterDataLoad {
+  // Add an implementation in subclasses for any chart setup code that should be called
+  // after the ranges etc have been restored
+}
+
+#pragma mark - SChartDelegate methods
 
 - (void)sChartDidFinishLoadingData:(ShinobiChart *)chart {
   // Restore the previous state of the chart
@@ -108,6 +139,8 @@
       donutSeries.style.initialRotation = self.rotations[seriesIndex];
     }
   }
+  
+  [self setupAfterDataLoad];
 }
 
 - (void)sChart:(ShinobiChart *)chart toggledSelectionForRadialPoint:(SChartRadialDataPoint *)dataPoint

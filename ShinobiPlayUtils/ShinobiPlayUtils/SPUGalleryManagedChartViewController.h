@@ -12,8 +12,11 @@
 @interface SPUGalleryManagedChartViewController : SPUGalleryManagedViewController<SChartDelegate>
 
 @property (strong, nonatomic) IBOutlet ShinobiChart *chart;
-//@property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
+@property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
 
--(id<SChartDatasource>)createDataSource;
+- (void)createChart;
+- (void)createDataSource;
+- (void)setupChart;
+- (void)setupAfterDataLoad;
 
 @end
