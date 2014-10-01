@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  self.chartFrame = CGRectInset(self.view.bounds, 20, 20);
   [self createChart];
   [self createDataSource];
   self.chart.datasource = self.dataSource;
@@ -46,11 +47,7 @@
   // Recreate the chart if necessary
   if (!self.chart) {
     [self createChart];
-    if (self.chart) {
-      self.chart.frame = self.chartFrame;
-    } else {
-      self.chart = [[ShinobiChart alloc] initWithFrame:self.chartFrame];
-    }
+    self.chart.frame = self.chartFrame;
     
     [self createDataSource];
     self.chart.datasource = self.dataSource;
@@ -83,10 +80,13 @@
   self.dataSource = nil;
 }
 
-#pragma mark - lifecycle methods that can be implemented in subclasses (move to protocol?)
+#pragma mark - lifecycle methods that can be implemented in subclasses
 
 - (void)createChart {
   // Add an implementation in subclasses if the chart isn't created in a xib
+  if (!self.chart) { 
+    self.chart = [[ShinobiChart alloc] initWithFrame:self.chartFrame];
+  }
 }
 
 - (void)createDataSource {
