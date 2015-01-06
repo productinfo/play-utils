@@ -27,23 +27,23 @@
   return [self colorWithHexString:@"#da290f" andAlpha:1.f];
 }
 
-+ (UIColor *)chartsPurpleColor {
++ (UIColor *)shinobiChartsPurpleColor {
   return [self colorWithHexString:@"#90095b" andAlpha:1.f];
 }
 
-+ (UIColor *)gridsOrangeColor {
++ (UIColor *)shinobiGridsOrangeColor {
   return [self colorWithHexString:@"#dd6b1d" andAlpha:1.f];
 }
 
-+ (UIColor *)essentialsBlueColor {
++ (UIColor *)shinobiEssentialsBlueColor {
   return [self colorWithHexString:@"#015184" andAlpha:1.f];
 }
 
-+ (UIColor *)gaugesGreenColor {
++ (UIColor *)shinobiGaugesGreenColor {
   return [self colorWithHexString:@"#066272" andAlpha:1.f];
 }
 
-+ (UIColor *)playDarkGrayColor {
++ (UIColor *)shinobiDarkGrayColor {
   return [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
 }
 
@@ -69,7 +69,7 @@
   return col;
 }
 
-- (UIColor *)backgroundColor {
+- (UIColor *)shinobiBackgroundColor {
   CGFloat h, s, b, a;
   if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
     

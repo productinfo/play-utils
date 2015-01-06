@@ -24,12 +24,12 @@
 @interface UIColor (SPUColor)
 
 + (UIColor *)shinobiRedColor;
-+ (UIColor *)chartsPurpleColor;
-+ (UIColor *)gridsOrangeColor;
-+ (UIColor *)essentialsBlueColor;
-+ (UIColor *)gaugesGreenColor;
-+ (UIColor *)playDarkGrayColor;
++ (UIColor *)shinobiChartsPurpleColor;
++ (UIColor *)shinobiGridsOrangeColor;
++ (UIColor *)shinobiEssentialsBlueColor;
++ (UIColor *)shinobiGaugesGreenColor;
++ (UIColor *)shinobiDarkGrayColor;
 
-- (UIColor *)backgroundColor;
+- (UIColor *)shinobiBackgroundColor;
 
 @end
