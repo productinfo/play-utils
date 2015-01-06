@@ -1,8 +1,8 @@
 //
-//  SPUGalleryManagedChartViewController.h
+//  UIColor+SPUColor.h
 //  ShinobiPlayUtils
 //
-//  Created by Alison Clarke on 29/09/2014.
+//  Created by Alison Clarke on 07/10/2014.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,17 +19,17 @@
 //  limitations under the License.
 //
 
-#import "SPUGalleryManagedViewController.h"
-#import <ShinobiCharts/ShinobiCharts.h>
+#import <UIKit/UIKit.h>
 
-@interface SPUGalleryManagedChartViewController : SPUGalleryManagedViewController<SChartDelegate>
+@interface UIColor (SPUColor)
 
-@property (strong, nonatomic) IBOutlet ShinobiChart *chart;
-@property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
++ (UIColor *)shinobiRedColor;
++ (UIColor *)shinobiChartsPurpleColor;
++ (UIColor *)shinobiGridsOrangeColor;
++ (UIColor *)shinobiEssentialsBlueColor;
++ (UIColor *)shinobiGaugesGreenColor;
++ (UIColor *)shinobiDarkGrayColor;
 
-- (void)createChart;
-- (void)createDataSource;
-- (void)setupChart;
-- (void)setupAfterDataLoad;
+- (UIColor *)shinobiBackgroundColor;
 
 @end

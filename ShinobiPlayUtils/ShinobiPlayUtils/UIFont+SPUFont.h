@@ -1,8 +1,8 @@
 //
-//  SPUGalleryManagedChartViewController.h
+//  UIFont+SPUFont.h
 //  ShinobiPlayUtils
 //
-//  Created by Alison Clarke on 29/09/2014.
+//  Created by Alison Clarke on 06/01/2015.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,17 +19,12 @@
 //  limitations under the License.
 //
 
-#import "SPUGalleryManagedViewController.h"
-#import <ShinobiCharts/ShinobiCharts.h>
+#import <UIKit/UIKit.h>
 
-@interface SPUGalleryManagedChartViewController : SPUGalleryManagedViewController<SChartDelegate>
+@interface UIFont (SPUFont)
 
-@property (strong, nonatomic) IBOutlet ShinobiChart *chart;
-@property (strong, nonatomic) NSObject<SChartDatasource> *dataSource;
-
-- (void)createChart;
-- (void)createDataSource;
-- (void)setupChart;
-- (void)setupAfterDataLoad;
++ (UIFont *)shinobiFontOfSize:(CGFloat)fontSize;
++ (UIFont *)lightShinobiFontOfSize:(CGFloat)fontSize;
++ (UIFont *)boldShinobiFontOfSize:(CGFloat)fontSize;
 
 @end
