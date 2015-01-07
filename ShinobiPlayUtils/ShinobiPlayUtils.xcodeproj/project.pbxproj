@@ -24,6 +24,8 @@
 		68A7999D19D94178009B8CC9 /* SPUGalleryManagedChartViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68A7999419D93CB9009B8CC9 /* SPUGalleryManagedChartViewController.h */; };
 		68E6E62A1A41A08600B5A221 /* UIColor+SPUColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E6E6291A41A08600B5A221 /* UIColor+SPUColor.m */; };
 		68FB9B721A5BD773009CCA4D /* UIFont+SPUFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FB9B711A5BD773009CCA4D /* UIFont+SPUFont.m */; };
+		68FB9B731A5C1C44009CCA4D /* UIColor+SPUColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68E6E6281A41A08600B5A221 /* UIColor+SPUColor.h */; };
+		68FB9B741A5C1C4C009CCA4D /* UIFont+SPUFont.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68FB9B701A5BD773009CCA4D /* UIFont+SPUFont.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				68FB9B741A5C1C4C009CCA4D /* UIFont+SPUFont.h in CopyFiles */,
+				68FB9B731A5C1C44009CCA4D /* UIColor+SPUColor.h in CopyFiles */,
 				68A7999D19D94178009B8CC9 /* SPUGalleryManagedChartViewController.h in CopyFiles */,
 				68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */,
 				68793C4B1959A709009C17BD /* SPUGalleryManagedViewController.h in CopyFiles */,
