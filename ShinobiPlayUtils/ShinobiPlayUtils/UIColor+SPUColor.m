@@ -21,6 +21,8 @@
 
 #import "UIColor+SPUColor.h"
 
+static NSArray *shinobiPlayColors;
+
 @implementation UIColor (SPUColor)
 
 + (UIColor *)shinobiRedColor {
@@ -45,6 +47,44 @@
 
 + (UIColor *)shinobiDarkGrayColor {
   return [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
+}
+
++ (UIColor *)shinobiPlayBlueColor {
+  return [UIColor colorWithRed:1/255.f *.8 green:122/255.f *.8 blue:255/255.f *.8 alpha:1.f];
+}
+
++ (UIColor *)shinobiPlayGreenColor {
+  return [UIColor colorWithRed:76/255.f *.8 green:217/255.f *.8 blue:100/255.f *.8 alpha:1.f];
+}
+
++ (UIColor *)shinobiPlayOrangeColor {
+  return [UIColor colorWithRed:255/255.f *.9 green:149/255.f *.9 blue:1/255.f *.9 alpha:1.f];
+}
+
++ (UIColor *)shinobiPlayRedColor {
+  return [UIColor colorWithRed:255/255.f *.9 green:45/255.f *.9 blue:85/255.f *.9 alpha:1.f];
+}
+
++ (UIColor *)shinobiPlayPurpleColor {
+  return [UIColor colorWithRed:88/255.f *.8 green:86/255.f *.8 blue:214/255.f *.8 alpha:1.f];
+}
+
++ (UIColor *)shinobiPlaySilverColor {
+  return [UIColor colorWithRed:142/255.f green:142/255.f blue:147/255.f alpha:1.f];
+}
+
++ (NSArray *)shinobiPlayColorArray {
+  static dispatch_once_t onceToken = 0;
+  dispatch_once(&onceToken, ^{
+    shinobiPlayColors = @[[UIColor shinobiPlayBlueColor],
+                          [UIColor shinobiPlayGreenColor],
+                          [UIColor shinobiPlayOrangeColor],
+                          [UIColor shinobiPlayRedColor],
+                          [UIColor shinobiPlayPurpleColor],
+                          [UIColor shinobiPlaySilverColor]];
+  });
+  
+  return shinobiPlayColors;
 }
 
 + (UIColor*)colorWithHexValue:(uint)hexValue andAlpha:(CGFloat)alpha {
