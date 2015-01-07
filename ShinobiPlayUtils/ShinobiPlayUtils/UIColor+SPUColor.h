@@ -29,6 +29,13 @@
 + (UIColor *)shinobiEssentialsBlueColor;
 + (UIColor *)shinobiGaugesGreenColor;
 + (UIColor *)shinobiDarkGrayColor;
++ (UIColor *)shinobiPlayBlueColor;
++ (UIColor *)shinobiPlayGreenColor;
++ (UIColor *)shinobiPlayOrangeColor;
++ (UIColor *)shinobiPlayRedColor;
++ (UIColor *)shinobiPlayPurpleColor;
++ (UIColor *)shinobiPlaySilverColor;
++ (NSArray *)shinobiPlayColorArray;
 
 - (UIColor *)shinobiBackgroundColor;
 
