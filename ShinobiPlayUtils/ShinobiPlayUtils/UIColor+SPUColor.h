@@ -38,5 +38,6 @@
 + (NSArray *)shinobiPlayColorArray;
 
 - (UIColor *)shinobiBackgroundColor;
+- (UIColor *)shinobiLightColor;
 
 @end
