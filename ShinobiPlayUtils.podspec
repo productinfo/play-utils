@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ShinobiPlayUtils"
-  s.version          = '0.1.11'
+  s.version          = '0.1.12'
   s.summary          = "Files common to ShinobiPlay projects"
   s.description      = <<-DESC
                        Files common to ShinobiPlay projects, e.g. utility classes and base classes
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'ShinobiPlayUtils/ShinobiPlayUtils/**/*.{h,m}'
+  s.resources = 'ShinobiPlayUtils/ShinobiPlayUtils/Fonts/*.ttf'
   s.frameworks = 'QuartzCore'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)"' }
 end

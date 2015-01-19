@@ -25,9 +25,8 @@
 
 + (UIColor *)shinobiRedColor;
 + (UIColor *)shinobiChartsPurpleColor;
-+ (UIColor *)shinobiGridsOrangeColor;
-+ (UIColor *)shinobiEssentialsBlueColor;
-+ (UIColor *)shinobiGaugesGreenColor;
++ (UIColor *)shinobiToolkitGreenColor;
++ (UIColor *)shinobiFormsBlueColor;
 + (UIColor *)shinobiDarkGrayColor;
 + (UIColor *)shinobiPlayBlueColor;
 + (UIColor *)shinobiPlayGreenColor;
