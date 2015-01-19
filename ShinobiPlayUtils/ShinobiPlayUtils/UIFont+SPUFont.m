@@ -24,15 +24,15 @@
 @implementation UIFont (SPUFont)
 
 + (UIFont *)shinobiFontOfSize:(CGFloat)fontSize {
-  return [UIFont fontWithName:@"HelveticaNeue-Thin" size:fontSize];
+  return [UIFont fontWithName:@"Roboto-Light" size:fontSize];
 }
 
 + (UIFont *)lightShinobiFontOfSize:(CGFloat)fontSize {
-  return [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:fontSize];
+  return [UIFont fontWithName:@"Roboto-Thin" size:fontSize];
 }
 
 + (UIFont *)boldShinobiFontOfSize:(CGFloat)fontSize {
-  return [UIFont fontWithName:@"HelveticaNeue-Light" size:fontSize];
+  return [UIFont fontWithName:@"Roboto-Regular" size:fontSize];
 }
 
 @end

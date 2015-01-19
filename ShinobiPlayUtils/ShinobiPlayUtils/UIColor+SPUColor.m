@@ -26,27 +26,23 @@ static NSArray *shinobiPlayColors;
 @implementation UIColor (SPUColor)
 
 + (UIColor *)shinobiRedColor {
-  return [self colorWithHexString:@"#da290f" andAlpha:1.f];
+  return [UIColor colorWithRed:228.0/255 green:35.0/255 blue:18.0/255 alpha:1];
 }
 
 + (UIColor *)shinobiChartsPurpleColor {
-  return [self colorWithHexString:@"#90095b" andAlpha:1.f];
+  return [UIColor colorWithRed:113.0/255 green:32.0/255 blue:123.0/255 alpha:1];
 }
 
-+ (UIColor *)shinobiGridsOrangeColor {
-  return [self colorWithHexString:@"#dd6b1d" andAlpha:1.f];
++ (UIColor *)shinobiToolkitGreenColor {
+  return [UIColor colorWithRed:0.0/255 green:142.0/255 blue:156.0/255 alpha:1];
 }
 
-+ (UIColor *)shinobiEssentialsBlueColor {
-  return [self colorWithHexString:@"#015184" andAlpha:1.f];
-}
-
-+ (UIColor *)shinobiGaugesGreenColor {
-  return [self colorWithHexString:@"#066272" andAlpha:1.f];
++ (UIColor *)shinobiFormsBlueColor {
+  return [UIColor colorWithRed:0.0/255 green:104.0/255 blue:162.0/255 alpha:1];
 }
 
 + (UIColor *)shinobiDarkGrayColor {
-  return [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
+  return [UIColor colorWithRed:83.0/255 green:96.0/255 blue:107.0/255 alpha:1];
 }
 
 + (UIColor *)shinobiPlayBlueColor {
@@ -85,28 +81,6 @@ static NSArray *shinobiPlayColors;
   });
   
   return shinobiPlayColors;
-}
-
-+ (UIColor*)colorWithHexValue:(uint)hexValue andAlpha:(CGFloat)alpha {
-  return [UIColor
-          colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0
-          green:((float)((hexValue & 0xFF00) >> 8))/255.0
-          blue:((float)(hexValue & 0xFF))/255.0
-          alpha:alpha];
-}
-
-+ (UIColor *)colorWithHexString:(NSString *)hexString andAlpha:(CGFloat)alpha {
-  UIColor *col;
-  hexString = [hexString stringByReplacingOccurrencesOfString:@"#"
-                                                   withString:@"0x"];
-  uint hexValue;
-  if ([[NSScanner scannerWithString:hexString] scanHexInt:&hexValue]) {
-    col = [self colorWithHexValue:hexValue andAlpha:alpha];
-  } else {
-    // invalid hex string
-    col = [self blackColor];
-  }
-  return col;
 }
 
 - (UIColor *)shinobiBackgroundColor {
