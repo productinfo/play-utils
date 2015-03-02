@@ -35,4 +35,8 @@
   return [UIFont fontWithName:@"Roboto-Regular" size:fontSize];
 }
 
++ (UIFont *)extraBoldShinobiFontOfSize:(CGFloat)fontSize {
+  return [UIFont fontWithName:@"Roboto-Bold" size:fontSize];
+}
+
 @end
