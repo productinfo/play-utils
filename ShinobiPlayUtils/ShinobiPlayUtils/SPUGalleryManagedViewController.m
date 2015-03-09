@@ -20,6 +20,7 @@
 //
 
 #import "SPUGalleryManagedViewController.h"
+#import "UIColor+SPUColor.h"
 
 @interface SPUGalleryManagedViewController ()
 
@@ -29,12 +30,32 @@
 
 @implementation SPUGalleryManagedViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+  self = [super initWithCoder:aDecoder];
+  if (self) {
+    self.needsOverlayOnLoad = NO;
+  }
+  return self;
+}
+
 - (instancetype)initWithViewFrame:(CGRect)frame {
   self = [super init];
   if (self) {
     self.frame = frame;
+    self.needsOverlayOnLoad = NO;
   }
   return self;
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  if (!CGRectIsEmpty(self.frame)) {
+    self.view.frame = self.frame;
+  }
+}
+
+- (void)preLoadData {
+  // Implement in subclasses
 }
 
 + (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName viewFrame:(CGRect)frame {
@@ -57,13 +78,6 @@
     return svc;
   } else {
     return nil;
-  }
-}
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  if (!CGRectIsEmpty(self.frame)) {
-    self.view.frame = self.frame;
   }
 }
 
