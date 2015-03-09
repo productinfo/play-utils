@@ -107,4 +107,16 @@ static NSArray *shinobiPlayColors;
   return nil;
 }
 
+- (UIColor *)shinobiBrightColor {
+  CGFloat h, s, b, a;
+  if ([self getHue:&h saturation:&s brightness:&b alpha:&a]) {
+    
+    return [UIColor colorWithHue:h
+                      saturation:s
+                      brightness:b+0.1
+                           alpha:a];
+  }
+  return nil;
+}
+
 @end

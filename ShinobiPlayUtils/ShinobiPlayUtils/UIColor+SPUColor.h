@@ -38,5 +38,6 @@
 
 - (UIColor *)shinobiBackgroundColor;
 - (UIColor *)shinobiLightColor;
+- (UIColor *)shinobiBrightColor;
 
 @end
