@@ -26,5 +26,6 @@
 + (UIFont *)shinobiFontOfSize:(CGFloat)fontSize;
 + (UIFont *)lightShinobiFontOfSize:(CGFloat)fontSize;
 + (UIFont *)boldShinobiFontOfSize:(CGFloat)fontSize;
++ (UIFont *)extraBoldShinobiFontOfSize:(CGFloat)fontSize;
 
 @end
