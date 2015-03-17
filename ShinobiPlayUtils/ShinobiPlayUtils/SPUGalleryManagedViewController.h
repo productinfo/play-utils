@@ -23,7 +23,27 @@
 
 @interface SPUGalleryManagedViewController : UIViewController
 
+/*
+ Whether the view controller needs a loading overlay (set to YES if it takes a while to load) 
+ in Play
+ */
+@property (assign, nonatomic) BOOL needsOverlayOnLoad;
+
+/*
+ A block to call when the example has finished loading. If needsOverlayOnLoad is set to YES,
+ the subclass should call the block when loading has finished, so that play can remove the 
+ overlay
+ */
+@property (copy, nonatomic) void (^onLoadComplete)();
+
 - (instancetype)initWithViewFrame:(CGRect)frame;
+
+/*
+ Implement in subclasses if there's any data that can be loaded on a background thread before 
+ the view controller appears
+ */
+- (void)preLoadData;
+
 + (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName viewFrame:(CGRect)frame;
 + (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName identifier:(NSString *)identifier
                                    viewFrame:(CGRect)frame;
