@@ -20,7 +20,6 @@
 //
 
 #import "SPUGalleryManagedViewController.h"
-#import "UIColor+SPUColor.h"
 
 @interface SPUGalleryManagedViewController ()
 
@@ -55,7 +54,8 @@
 }
 
 - (void)preLoadData {
-  // Implement in subclasses
+  // Implement in subclasses if there's any data that can be loaded on a background thread
+  // before the view controller appears
 }
 
 + (instancetype)viewControllerFromStoryboard:(NSString *)storyboardName viewFrame:(CGRect)frame {
