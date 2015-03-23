@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, SPUTextViewImageAlignment) {
 /*
  Add the given image to the text view with an exclusion path so the text wraps around it.
  */
-- (void)addImage:(UIImage*)image imageSize:(CGSize)size imageAlignment:(SPUTextViewImageAlignment)imageAlignment
+- (void)addImage:(UIImage *)image imageSize:(CGSize)size imageAlignment:(SPUTextViewImageAlignment)imageAlignment
        yPosition:(CGFloat)yPosition padding:(CGFloat)padding;
 
 @end
