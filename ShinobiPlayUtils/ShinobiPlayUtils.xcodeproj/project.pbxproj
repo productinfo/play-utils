@@ -18,6 +18,8 @@
 		68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */; };
 		68793C4A1959A67C009C17BD /* SPUGalleryManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */; };
 		68793C4B1959A709009C17BD /* SPUGalleryManagedViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */; };
+		68A081E11AC0256400BDCA80 /* UITextView+SPUImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A081E01AC0256400BDCA80 /* UITextView+SPUImage.m */; };
+		68A081E21AC0284600BDCA80 /* UITextView+SPUImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68A081DF1AC0256400BDCA80 /* UITextView+SPUImage.h */; };
 		68A7999C19D93D49009B8CC9 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A7999B19D93D49009B8CC9 /* CoreText.framework */; };
 		68E6E62A1A41A08600B5A221 /* UIColor+SPUColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E6E6291A41A08600B5A221 /* UIColor+SPUColor.m */; };
 		68FB9B721A5BD773009CCA4D /* UIFont+SPUFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FB9B711A5BD773009CCA4D /* UIFont+SPUFont.m */; };
@@ -42,6 +44,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				68A081E21AC0284600BDCA80 /* UITextView+SPUImage.h in CopyFiles */,
 				68FB9B741A5C1C4C009CCA4D /* UIFont+SPUFont.h in CopyFiles */,
 				68FB9B731A5C1C44009CCA4D /* UIColor+SPUColor.h in CopyFiles */,
 				68793C2D195986A4009C17BD /* SPUOrderedDictionary.h in CopyFiles */,
@@ -65,6 +68,8 @@
 		68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUOrderedDictionary.m; sourceTree = "<group>"; };
 		68793C481959A67C009C17BD /* SPUGalleryManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SPUGalleryManagedViewController.h; sourceTree = "<group>"; };
 		68793C491959A67C009C17BD /* SPUGalleryManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SPUGalleryManagedViewController.m; sourceTree = "<group>"; };
+		68A081DF1AC0256400BDCA80 /* UITextView+SPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+SPUImage.h"; sourceTree = "<group>"; };
+		68A081E01AC0256400BDCA80 /* UITextView+SPUImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+SPUImage.m"; sourceTree = "<group>"; };
 		68A7999B19D93D49009B8CC9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		68E6E6281A41A08600B5A221 /* UIColor+SPUColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SPUColor.h"; sourceTree = "<group>"; };
 		68E6E6291A41A08600B5A221 /* UIColor+SPUColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SPUColor.m"; sourceTree = "<group>"; };
@@ -133,6 +138,8 @@
 				68E6E6291A41A08600B5A221 /* UIColor+SPUColor.m */,
 				68FB9B701A5BD773009CCA4D /* UIFont+SPUFont.h */,
 				68FB9B711A5BD773009CCA4D /* UIFont+SPUFont.m */,
+				68A081DF1AC0256400BDCA80 /* UITextView+SPUImage.h */,
+				68A081E01AC0256400BDCA80 /* UITextView+SPUImage.m */,
 				68793C2A195985B5009C17BD /* SPUOrderedDictionary.h */,
 				68793C2B195985B5009C17BD /* SPUOrderedDictionary.m */,
 				68793C071959855D009C17BD /* Supporting Files */,
@@ -249,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A081E11AC0256400BDCA80 /* UITextView+SPUImage.m in Sources */,
 				68E6E62A1A41A08600B5A221 /* UIColor+SPUColor.m in Sources */,
 				68FB9B721A5BD773009CCA4D /* UIFont+SPUFont.m in Sources */,
 				68793C4A1959A67C009C17BD /* SPUGalleryManagedViewController.m in Sources */,
