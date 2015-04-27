@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ShinobiPlayUtils"
-  s.version          = '0.1.16'
+  s.version          = '1.0.0'
   s.summary          = "Files common to ShinobiPlay projects"
   s.description      = <<-DESC
                        Files common to ShinobiPlay projects, e.g. utility classes and base classes
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.shinobicontrols.com"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "Alison Clarke" => "aclarke@scottlogic.co.uk" }
-  s.source           = { :git => "https://bitbucket.org/shinobicontrols/shinobi-play-utils.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ShinobiControls/play-utils.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/shinobicontrols'
   s.platform     = :ios, '7.0'
   s.requires_arc = true
