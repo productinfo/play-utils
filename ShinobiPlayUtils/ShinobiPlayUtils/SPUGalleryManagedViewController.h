@@ -34,7 +34,7 @@
  the subclass should call the block when loading has finished, so that play can remove the 
  overlay
  */
-@property (copy, nonatomic) void (^onLoadComplete)();
+@property (copy, nonatomic) void (^onLoadComplete)(void);
 
 - (instancetype)initWithViewFrame:(CGRect)frame;
 
